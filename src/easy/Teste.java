@@ -3,20 +3,33 @@ package easy;
 import java.util.Locale;
 
 public class Teste {
-
 	public static void main(String[] args) {
-		Locale.setDefault(Locale.US);
 		
-		String a = "Testando nova função";
-		System.out.println(a);
-//		String b = String.format(a, );
-		double c = 3.8899;
-		int d = 10000;
-		System.out.printf("%.2s\n", a);
-		System.out.printf("%03d", d);
-//		System.out.printf(a, args)
+		String product1 = "Computer";
+		String product2 = "Office desk";
+		
+		int age = 30;
+		int code = 5290;
+		char gender = 'F';
+		
+		double price1 = 2100.00;
+		double price2 = 650.50;
+		double measure = 53.234567;
+		
+		
+		System.out.println("Products:" );
+		System.out.printf("%s, which price is $ %.2f"
+				+ "\n%s, which price is $ %.2f"
+				+ "\n\nRecord: %d years old, code %d and gender: %c"
+				+ "\n\nMeasure with eight decimal places: %.8f"
+				+ "\nRouded (three decimal places): %.3f\n", product1, price1, product2, price2, age, code, gender, measure, measure);
+		
+		
+		Locale.setDefault(Locale.US);
 
+		System.out.printf("US decimal point: %.3f: ", measure);
+		
+		
 	}
 	
-
 }
