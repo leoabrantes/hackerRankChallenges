@@ -1,3 +1,6 @@
+package easy;
+
+import java.util.Scanner;
 
 public class javaIntToString {
 
