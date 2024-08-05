@@ -1,5 +1,6 @@
 package easy;
 
+import java.security.Permission;
 import java.util.Scanner;
 
 public class javaIntToString {
@@ -34,7 +35,9 @@ class DoNotTerminate {
 		private static final long serialVersionUID = 1;
 	}
 
+	@SuppressWarnings("removal")
 	public static void forbidExit() {
+		@SuppressWarnings({ "deprecation" })
 		final SecurityManager securityManager = new SecurityManager() {
 			@Override
 			public void checkPermission(Permission permission) {
