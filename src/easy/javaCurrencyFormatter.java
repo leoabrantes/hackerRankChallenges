@@ -28,7 +28,7 @@ public class javaCurrencyFormatter {
 	        
 	        DecimalFormatSymbols simbolosIN = new DecimalFormatSymbols(new Locale("en", "IN"));
 	        simbolosIN.setCurrencySymbol("Rs.");
-	        DecimalFormat formatoIN = new DecimalFormat("¤#,##0.00", simbolosIN);
+	        DecimalFormat formatoIN = new DecimalFormat("##,###.##", simbolosIN);
 
 	        // Imprime o valor formatado em diferentes moedas
 	        System.out.println("Valor em dólares dos EUA: " + formatoUS.format(valor));
