@@ -17,9 +17,7 @@ public class javaList {
 		List<Integer> list = new ArrayList<>();
 		
 		for(int i = 0 ; i< size; i++) {
-			
 			list.add(sc.nextInt());
-			
 		}
 		
 		int q = sc.nextInt();
@@ -27,24 +25,23 @@ public class javaList {
 		
 		for(int i = 0 ; i< q; i++) {
 			String action = sc.nextLine();
-			if(action == "Insert") {
+			
+			if(action.equalsIgnoreCase("Insert")) {
+				int index = sc.nextInt();
+				int element = sc.nextInt();
+				sc.nextLine();
+				list.add(index, element);
 				
-				list.add(sc.nextInt(), sc.nextInt());
-				
-			}else if (action == "Delete") {
-				
+			}else if (action.equalsIgnoreCase("Delete")) {
 				list.remove(sc.nextInt());
 				
-			}
+			} else {System.out.println("Wrong answer! Next step");}
 			
 		}
 		
 		for(int n : list) {
 			System.out.print(n + " ");
-			
 		}
-		
-		
 		
 		sc.close();
 
