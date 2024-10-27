@@ -1,15 +1,13 @@
-/.classpath
-/.project
 /JavaLoops2.class
 /JavaOutputFormatting.class
+/DoNotTerminate$ExitTrappedException.class
+/DoNotTerminate.class
 /JavaStdinAndStdout2.class
 /JavaStringCompare.class
+/Result.class
 /Teste.class
 /javaCurrencyFormatter.class
 /javaDataTypes.class
-/DoNotTerminate$ExitTrappedException.class
-/DoNotTerminate.class
-/Result.class
 /javaDateAndTime.class
 /javaEndOfFile.class
 /javaIntToString.class
@@ -17,3 +15,4 @@
 /javaStaticInitializerBlock.class
 /javaStringsIntroduction.class
 /javaSubstring.class
+/javaLambdaExpressions.class
