@@ -6,6 +6,8 @@
 /JavaOutputFormatting.class
 /JavaStdinAndStdout2.class
 /JavaStringCompare.class
+/JavaStringTokens.class
+/PatternSintaxChecker.class
 /Result.class
 /Teste.class
 /javaCurrencyFormatter.class
@@ -18,4 +20,3 @@
 /javaStaticInitializerBlock.class
 /javaStringsIntroduction.class
 /javaSubstring.class
-/JavaStringTokens.class
