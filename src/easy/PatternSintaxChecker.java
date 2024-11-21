@@ -24,10 +24,7 @@ public class PatternSintaxChecker {
 		        } catch (PatternSyntaxException e) {
 		            System.out.println("Invalid");
 		        }
-			
 		}
-			
-		
 
 		in.close();
 	}
