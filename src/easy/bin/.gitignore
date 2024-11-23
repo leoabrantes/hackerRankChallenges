@@ -2,6 +2,7 @@
 /.project
 /DoNotTerminate$ExitTrappedException.class
 /DoNotTerminate.class
+/JavaInterface.class
 /JavaLoops2.class
 /JavaOutputFormatting.class
 /JavaStdinAndStdout2.class
@@ -20,4 +21,6 @@
 /javaStaticInitializerBlock.class
 /javaStringsIntroduction.class
 /javaSubstring.class
-/JavaInterface.class
+/AdvancedArithmetic.class
+/MyCalculator$JavaInterface.class
+/MyCalculator.class
