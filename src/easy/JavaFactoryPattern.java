@@ -21,7 +21,11 @@ interface Food {
 	class FoodFactory {
 		public Food getFood(String order) {
 
-\Write your code here
+//Write your code here
+
+
+
+
 
 }//End of getFood method
 
@@ -34,7 +38,7 @@ interface Food {
 
 		try{
 
-			Scanner sc=new Scanner(System.in);
+			Scanner sc = new Scanner(System.in);
 			//creating the factory
 			FoodFactory foodFactory = new FoodFactory();
 	
@@ -44,6 +48,8 @@ interface Food {
 			
 			System.out.println("The factory returned "+food.getClass());
 			System.out.println(food.getType());
+			
+			sc.close();
 		}
 		catch (Do_Not_Terminate.ExitTrappedException e) {
 			System.out.println("Unsuccessful Termination!!");
