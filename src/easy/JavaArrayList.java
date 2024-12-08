@@ -30,11 +30,13 @@ public class JavaArrayList {
 			y[i] = sc.nextInt();
 		}
 		
+		
 		for(int i=0; i<qNum; i++) {
-			if(mat[x[i]-1][y[i]-1] == 0 || (x[i]-1) > n || (y[i]-1) > 50000 ) {
-				System.out.println("ERROR!");
-			} else {
+			try {
 				System.out.println(mat[x[i]-1][y[i]-1]);
+				
+			} catch (ArrayIndexOutOfBoundsException e) {
+				System.out.println("ERROR!");
 			}
 		}
 		
