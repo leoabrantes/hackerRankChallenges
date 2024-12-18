@@ -26,11 +26,31 @@ public class Java2dArray {
             }
 
             arr.add(arrRowItems);
-            
            
         }
         
-         
+        int sum;  
+        Integer result = null;
+        
+        
+        for (int i = 0; i < 4; i++) {
+        	 
+        	for (int j = 0; j < 4; j++) {
+        		
+        		sum = arr.get(i).get(j) + arr.get(i).get(j+1) 
+        			+ arr.get(i).get(j+2) 
+        			+ arr.get(i+1).get(j+1) + arr.get(i+2).get(j) 
+        			+ arr.get(i+2).get(j+1) + arr.get(i+2).get(j+2);
+        		
+	        		if((result == null) || (sum > result)) {
+	        			result = sum;
+	        		}
+        		}
+        		
+             
+        }
+
+        System.out.print(result);
 
         bufferedReader.close();
 
