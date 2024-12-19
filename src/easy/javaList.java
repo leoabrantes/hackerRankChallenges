@@ -13,6 +13,8 @@ public class javaList {
 		Scanner sc = new Scanner(System.in);
 		
 		int size = sc.nextInt();
+		String action;
+		int index, element;
 		
 		List<Integer> list = new ArrayList<>();
 		
@@ -21,15 +23,16 @@ public class javaList {
 		}
 		
 		int q = sc.nextInt();
-		sc.nextLine();
 		
+		
+			
 		for(int i = 0 ; i< q; i++) {
-			String action = sc.nextLine();
+			sc.nextLine();
+			action = sc.nextLine();
 			
 			if(action.equalsIgnoreCase("Insert")) {
-				int index = sc.nextInt();
-				int element = sc.nextInt();
-				sc.nextLine();
+				index = sc.nextInt();
+				element = sc.nextInt();
 				list.add(index, element);
 				
 			}else if (action.equalsIgnoreCase("Delete")) {
