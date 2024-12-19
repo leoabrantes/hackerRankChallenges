@@ -24,7 +24,6 @@ public class javaList {
 		
 		int q = sc.nextInt();
 		
-		
 			
 		for(int i = 0 ; i< q; i++) {
 			sc.nextLine();
