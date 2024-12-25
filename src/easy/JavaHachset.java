@@ -21,8 +21,15 @@ public class JavaHachset {
         
         Set<String> valuesDifferent = new HashSet<>();
         
-        for (String valor : array) {
-        	valuesDifferent.add(valor);
+        int[] values = new int[t];
+        
+        for (int i = 0; i < t; i++) {
+        	valuesDifferent.add(pair_left[i] + " " + pair_right[i]);
+        	values[i] = valuesDifferent.size();
+        }
+        
+        for (int valor : values) {
+        	System.out.println(valor);
         }
         
        
@@ -51,9 +58,9 @@ public class JavaHachset {
         	
 //        	q[i] = (i+1)-count;
 //        }
-        for(int value : q) {
-        	System.out.println(value);
-        }
+//        for(int value : q) {
+//        	System.out.println(value);
+//        }
         s.close();
 
     }
