@@ -19,9 +19,6 @@ class JavaMap{
 	            map.put(name, phone);
 	        }
 	        
-	        
-	        System.out.println(map);
-	        
 	        while(in.hasNext())
 	        {
 	            String s = in.nextLine();
