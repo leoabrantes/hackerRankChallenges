@@ -31,37 +31,5 @@ public class JavaHachset {
         for (int valor : values) {
         	System.out.println(valor);
         }
-        
-       
-//Write your code here
-//        int[] q= new int[t];
-//        int count;
-//        
-//        for(int i=0; i<t; i++) {
-//        	count=0;
-//        	
-//        	int k = i;
-//        			
-//        	while(k>0) {
-//        		
-//	        	for(int j=0; j<k; j++) {
-//	        		
-//	        		if(pair_left[k].equals(pair_left[j])&&pair_right[k].equals(pair_right[j])) {
-//	        		    		count++;
-//	        		}
-//	        		
-//	        	}
-//	        	k--;
-//	        	
-//	        	q[i] = (i+1)-count;
-//        	}
-        	
-//        	q[i] = (i+1)-count;
-//        }
-//        for(int value : q) {
-//        	System.out.println(value);
-//        }
-        s.close();
-
     }
 }
