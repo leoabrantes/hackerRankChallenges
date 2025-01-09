@@ -1,12 +1,11 @@
 package easy;
 
 
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
 
 
 class Student{}
-class Rockstar{   }
+class Rockstar{}
 class Hacker{}
 
 
@@ -16,11 +15,11 @@ public class javaInstanceOfKeyword{
       int a = 0,b = 0,c = 0;
       for(int i = 0; i < mylist.size(); i++){
          Object element=mylist.get(i);
-         if(~~Complete this line~~)
+         if(element instanceof Student)
             a++;
-         if(~~Complete this line~~)
+         if(element instanceof Rockstar)
             b++;
-         if(~~Complete this line~~)
+         if(element instanceof Hacker)
             c++;
       }
       String ret = Integer.toString(a)+" "+ Integer.toString(b)+" "+ Integer.toString(c);
