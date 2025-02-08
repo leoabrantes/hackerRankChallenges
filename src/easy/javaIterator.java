@@ -1,20 +1,24 @@
 package easy;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Scanner;
 
-import java.util.*;
 public class javaIterator{
 	
    static Iterator func(ArrayList mylist){
       Iterator it=mylist.iterator();
       while(it.hasNext()){
-         Object element = ~~~Complete this line~~~
-         if(~~~Complete this line~~~)//Hints: use instanceof operator
-
+         Object element = it.next();
+         it.remove();      
+         if(element.equals("###"))
 			break;
-		}
+	  }
       return it;
       
    }
+   
+   
    @SuppressWarnings({ "unchecked" })
    public static void main(String []args){
       ArrayList mylist = new ArrayList();
