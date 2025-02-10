@@ -16,25 +16,20 @@ class JavaBigDecimal{
         }
         sc.close();
         
-        List<String> valores = Arrays.asList();
-        for(int i=0; i<n; i++){
-            valores.add(s[i]);
-            
-        }
-
-        valores.sort((a, b) -> {
-            Double numA = Double.parseDouble(a);
-            Double numB = Double.parseDouble(b);
-            return numB.compareTo(numA);
+        s = Arrays.stream(s)
+                .filter(v -> v != null)
+                .toArray(String[]::new);
+        
+         Arrays.sort(s, new Comparator<String>() {
+            @Override
+            public int compare(String a, String b) {
+                BigDecimal numA = new BigDecimal(a);
+                BigDecimal numB = new BigDecimal(b);
+                return numB.compareTo(numA);
+            }
         });
-
-      
-        int j= 0;
-        for (String valor : valores) {
-            s[j] = valor;
-            j++;
-        }
-
+       
+       
         //Output
         for(int i=0;i<n;i++)
         {
